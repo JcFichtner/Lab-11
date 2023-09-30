@@ -1,0 +1,28 @@
+Escreva um programa que peça e mostre informações como mostrado no exemplo
+abaixo. O número de caracteres para o primeiro e segundo nome deve ser definido
+em uma constante.
+
+Primeiro nome? João
+Segundo nome? Dias
+Bom dia, João Dias.
+Seja bem vindo JD
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	char nome[5];
+	char sobrenome[6];
+
+	cout << "Nome: ";
+	cin >> nome;
+
+	cout << "Sobrenome: ";
+	cin >> sobrenome;
+
+	cout << "Bom Dia, " << nome << sobrenome << endl;
+	cout << "Seja bem vindo" << nome[0] << sobrenome[0];
+
+}
