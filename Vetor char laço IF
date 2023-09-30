@@ -1,0 +1,40 @@
+Escreva um programa que peça e mostre informações do usuário, como mostrado:
+
+Qual é o nome? João Maria
+Que conceito você merece? B
+Bom dia, João Maria. Seu conceito é C.
+
+Note que o programa deve ser capaz de aceitar nome formados por mais de uma
+palavra. Observe também que o programa ajusta o conceito para baixo.
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	const int Tam = 50;
+	
+	char nome[Tam];
+	char nota[Tam];
+
+	cout << "Qual Seu Nome: ";
+	cin.getline(nome, Tam);
+
+	cout << "Que nota vc merece? ";
+	cin >> nota;
+	
+
+    if(nota[0] == 'A')
+	
+		cout << "Ola, " << nome << " Sua nota eh B";
+	
+	else if(nota[0] == 'B')
+
+		cout << "Ola, " << nome << " Sua nota eh C";
+
+	else if (nota[0] == 'C')
+
+		cout << "Ola, " << nome << " Sua nota eh D";
+		
+}
