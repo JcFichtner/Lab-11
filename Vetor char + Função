@@ -1,0 +1,47 @@
+Construa uma função que receba uma string como parâmetro e retorne o último
+caractere da string, independentemente de seu tamanho. Construa um programa
+para testar a função, como mostrado abaixo:
+
+Digite uma palavra: progcomp
+Em progcomp a última letra é p.
+
+#include <iostream>
+
+using namespace std;
+
+char palavra(char x[])
+{
+	if (strlen(x) == 2)
+		return x[1];
+	else if (strlen(x) == 3)
+		return x[2];
+	else if (strlen(x) == 4)
+		return x[3];
+	else if (strlen(x) == 5)
+		return x[4];
+	else if (strlen(x) == 6)
+		return x[5];
+	else if (strlen(x) == 7)
+		return x[6];
+	else if (strlen(x) == 8)
+		return x[7];
+	else if (strlen(x) == 9)
+		return x[8];
+	else if (strlen(x) == 10)
+		return x[9];
+	else if (strlen(x) == 11)
+		return x[10];
+	else if (strlen(x) == 12)
+		return x[11];
+
+}
+
+int main()
+{
+	cout << "Digite uma Palavra: ";
+	char palavra0[20];
+	cin >> palavra0;
+
+	cout << "A ultima palavra de " << palavra0 << " eh " << palavra(palavra0);
+		
+}
